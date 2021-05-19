@@ -1,9 +1,18 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid')
     let squares = Array.from(document.querySelectorAll('.grid div'))
     const ScoreDisplay = document.querySelector('#score')
     const StartBtn = document.querySelector('#start-button')
     const width = 10
+
+    //making 200 divs for the grid
+    var gridDivs = ""
+    for (var i = 0; i < 200; i++) {
+        gridDivs += '<div></div>';
+    }
+    var container = document.getElementById("hi");
+    container.innerHTML = gridDivs;
 
     //Tetrominoes
     const lTetromino = [
@@ -46,5 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let currentPosition = 4
       let currentRotation = 0
 
-      console.log(theTetrominoes[0][0])
+      //randomly select a Tetromino and its first rotation
+      let random = Math.floor(Math.random()*theTetrominoes.length)
+      let current = theTetrominoes[random][currentRotation]
     })
