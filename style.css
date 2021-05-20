@@ -1,13 +1,37 @@
+.both-grids {
+  display: flex;
+}
 .grid {
   width: 200px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: aquamarine;
+  background-color: black;
 }
 
 .grid div {
   height: 20px;
   width: 20px;
-  background-color: blueviolet;
+}
+
+.tetromino {
+  background-color: aquamarine;
+}
+
+.mini-grid {
+  margin-left: 5px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+button {
+  font-family: Verdana, sans-serif;
 }
